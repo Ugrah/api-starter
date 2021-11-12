@@ -1,0 +1,10 @@
+!/installer/*
+!/index.php
+!/NOTYET
+
+!/README.md
+
+/vendor/
+/var/*
+
+.env

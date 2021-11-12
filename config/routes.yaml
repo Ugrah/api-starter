@@ -1,0 +1,19 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+authentication_token:
+    path: /api/auth
+    methods: ['POST']
+
+gesdinet_jwt_refresh_token:
+    path: /api/token/refresh
+    methods: ['POST']
+    controller: gesdinet.jwtrefreshtoken::refresh
+
+api_me:
+    path: '/api/me'
+    methods: ['POST']
+    defaults:
+        _controller: '\App\Controller\ApiController::me'
+        _api_resource_class: 'App\Entity\User'
+        _api_collection_operation_name: 'api_me'
