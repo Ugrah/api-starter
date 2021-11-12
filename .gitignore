@@ -1,8 +1,5 @@
-!/installer/*
-!/index.php
-!/NOTYET
+/config/jwt/
 
-!/README.md
 
 /vendor/
 /var/*
